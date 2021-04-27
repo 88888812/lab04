@@ -16,16 +16,6 @@ apt:
   - g++-7
 
 script:
-- cd lab03
-- cd hello_world_application
-- cmake -H. -B_build
-- cmake --build _build
-- cmake --build _build --target hello_world
-- ./_build/hello_world
-
-- cd ..
-- cd solver_application
-- cmake -H. -B_build
-- cmake --build _build
-- cmake --build _build --target solver
+cmake CMakeLists.txt
+cmake --build 
 
